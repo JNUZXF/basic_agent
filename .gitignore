@@ -1,0 +1,280 @@
+# 文件功能：项目根目录的.gitignore文件
+# 文件路径：D:\AgentBuilding\basic_agent\.gitignore
+# 功能说明：定义Git版本控制中需要忽略的文件和目录
+
+# ==================== Python相关 ====================
+# Python字节码文件
+__pycache__/
+*.py[cod]
+*$py.class
+
+# 分发/打包
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# ==================== 环境配置 ====================
+# 环境变量文件
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# 虚拟环境
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.venv/
+
+# ==================== IDE和编辑器 ====================
+# VSCode
+.vscode/
+*.code-workspace
+
+# PyCharm
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# ==================== 操作系统相关 ====================
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# ==================== 项目特定文件 ====================
+# 对话记录和临时文件
+files/*/tool_conversations.json
+files/*/display_conversations.txt
+data/
+conversations/
+logs/
+*.log
+
+# API密钥和配置文件（如果包含敏感信息）
+config.ini
+secrets.json
+api_keys.json
+*.key
+*.pem
+*.p12
+
+# 模型文件（通常很大）
+models/
+*.bin
+*.safetensors
+*.pt
+*.pth
+*.onnx
+*.h5
+*.pkl
+*.joblib
+
+# 数据文件
+data/
+datasets/
+*.csv
+*.xlsx
+*.xls
+*.json
+*.jsonl
+*.parquet
+*.feather
+
+# 临时文件
+temp/
+tmp/
+*.tmp
+*.temp
+
+# 缓存文件
+.cache/
+cache/
+*.cache
+
+# ==================== 文档和媒体文件 ====================
+# 大型文档文件
+*.pdf
+*.doc
+*.docx
+*.ppt
+*.pptx
+
+# 图片和视频（如果不需要版本控制）
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.bmp
+*.tiff
+*.svg
+*.mp4
+*.avi
+*.mov
+*.wmv
+*.flv
+
+# 音频文件
+*.mp3
+*.wav
+*.flac
+*.aac
+*.ogg
+
+# ==================== 数据库相关 ====================
+# SQLite数据库
+*.db
+*.sqlite
+*.sqlite3
+
+# 数据库备份
+*.dump
+*.sql
+
+# ==================== 网络和API相关 ====================
+# 请求日志
+requests.log
+api_requests.log
+
+# 网络缓存
+.netrc
+
+# ==================== 测试相关 ====================
+# 测试输出
+test_output/
+test_results/
+*.test
+
+# 性能分析
+*.prof
+*.profile
+
+# ==================== 部署相关 ====================
+# Docker
+Dockerfile.local
+docker-compose.override.yml
+.dockerignore
+
+# 部署配置
+deploy/
+deployment/
+*.deploy
+
+# ==================== 其他 ====================
+# 备份文件
+*.bak
+*.backup
+*.old
+
+# 压缩文件
+*.zip
+*.tar
+*.tar.gz
+*.rar
+*.7z
+
+# 系统文件
+.directory
+.Trash-*
+.fuse_hidden*
+
+# 临时目录
+tmp/
+temp/
